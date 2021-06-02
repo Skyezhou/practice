@@ -1,9 +1,0 @@
-def problem5(original_set):
-    power_set = [[]]
-    
-    for i in range(len(original_set)):
-        for j in range(len(power_set)):
-            power_set.append(power_set[j]+[original_set[i]])
-            sorted(power_set)
-    
-    return(power_set)
